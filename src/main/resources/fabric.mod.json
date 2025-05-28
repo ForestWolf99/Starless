@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "starbegone",
+  "version": "${version}",
+  "name": "StarBegone",
+  "description": "Wither no drop stars please.",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/starless.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.forestwolf99.starbegone.client.StarbegoneClient"
+    ],
+    "main": [
+      "me.forestwolf99.starbegone.Starbegone"
+    ]
+  },
+  "mixins": [
+    "starbegone.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
